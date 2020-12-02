@@ -67,7 +67,7 @@ def send_message(client, users_map, money, my_id):
             client.deleteThreads(thread_ids=fbuser.uid)
             time.sleep(1)  
 
-def main(user, password, my_id, file_path):
+def main(user, password, my_id, file_path, small_value, big_value):
     users_map = open_file(file_path)
 
     uag = fbchat._util.USER_AGENTS[0] # choose deterministic to prevent alerts from FB
